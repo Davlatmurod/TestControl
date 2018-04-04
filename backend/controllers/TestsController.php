@@ -20,6 +20,14 @@ class TestsController extends Controller
     public function behaviors()
     {
         return [
+            'access'=>[
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'roles'=>['?'],
+                    ],
+                ]
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [

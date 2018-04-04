@@ -48,4 +48,3 @@ $e_answer="answer_".$combinate_answer[4];
     </div>
 </body>
 </html>
-

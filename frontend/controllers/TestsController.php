@@ -7,6 +7,7 @@ use Yii;
 use frontend\models\Tests;
 use frontend\models\TestsSearch;
 use yii\db\Exception;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -59,6 +60,14 @@ class TestsController extends Controller
     public function behaviors()
     {
         return [
+            'access'=>[
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'roles'=>['?'],
+                    ],
+                ]
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
