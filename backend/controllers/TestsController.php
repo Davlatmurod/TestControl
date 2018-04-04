@@ -25,7 +25,8 @@ class TestsController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'roles'=>['?'],
+                        'allow'=>true,
+                        'roles'=>['@'],
                     ],
                 ]
             ],

@@ -2,7 +2,7 @@
 <script>
     //var jvalue = 'sasaskjalksjslajlkdjl;athis is javascript value';
     var jvalue="<?php echo $abc;?>";
-    alert(jvalue);
+    //alert(jvalue);
 </script>
 <?php $abc="sasasa";?>
 <script>
@@ -10,3 +10,5 @@
 </script>
 <?php $abc="<script>document.write(jvalue)</script>";?>
 <?php echo $abc;?>
+<?php
+?>
