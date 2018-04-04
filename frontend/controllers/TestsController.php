@@ -12,7 +12,6 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use frontend\models\Science;
-use yii\data\pagination;
 use backend\models\Actions;
 
 /**

@@ -8,6 +8,7 @@ use backend\models\ScienceSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * ScienceController implements the CRUD actions for Science model.

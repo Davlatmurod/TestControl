@@ -8,6 +8,7 @@ use backend\models\TestEventsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * TestEventsController implements the CRUD actions for TestEvents model.
